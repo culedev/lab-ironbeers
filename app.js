@@ -32,7 +32,6 @@ app.get("/random-beer", (req, res) => {
   .then(responseFromAPI => {
     res.render("random-beer.hbs", {
       beer: responseFromAPI[0]
-
     })
   })
   .catch(error => console.log(error));

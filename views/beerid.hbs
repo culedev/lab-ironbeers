@@ -1,2 +1,11 @@
+<div class="beerapi">
+    {{>beerpartial beerapi}}
 
-{{>beerpartial beerapi}}
+    <ul><h3>Food Pairing</h3>
+      {{#each beerapi.food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <span><strong>Brewers Tips:</strong> {{beerapi.brewers_tips}}</span>
+</div>
