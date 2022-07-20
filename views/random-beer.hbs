@@ -1,9 +1,6 @@
 <div>
-  <img src='{{beer.image_url}}' alt='beer' />
-  <div>
-    <h3>{{beer.name}}</h3>
-    <h4>{{beer.tagline}}</h4>
-    <p>{{beer.description}}</p>
+    
+    {{>beerpartial beer}}
 
     <ul><h4>Food Pairing</h4>
       {{#each beer.food_pairing}}
@@ -12,6 +9,6 @@
     </ul>
 
     <span><strong>Brewers Tips:</strong> {{beer.brewers_tips}}</span>
-  </div>
+  
 
 </div>
